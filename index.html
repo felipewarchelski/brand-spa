@@ -1,12 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comércio de camisetas oversized">
+    <meta name="keywords"
+        content="stitched, STITCHED, Stitched, stich, stiched, camisetas, camisetas oversized, oversized, andorinha, camiseta lutador, camiseta farol, serenade, serenade collection, camisas, marca de roupa, marca streetwear, streetwear">
+    <meta name="author" content="Felipe Warchelski">
     <title>Stitched</title>
-    <link rel="shortcut icon" href="favicon_v2_branco.png" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon_v2_branco.png" type="image/x-icon" id="favicon">
 </head>
-<body style="height: 100vh; width: 100vw; overflow: hidden; margin: 0px; background-color: #fefbf6; display: flex; justify-content: center;">
-    <img src="bg_site_8K.webp" alt="Imagem de Fundo" style="height: 100vh; overflow: hidden; aspect-ratio: 16/9; object-fit: cover;">
+<style>
+    @import url('https://fonts.cdnfonts.com/css/malvinas-signature');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    body {
+        font-family: "Montserrat", sans-serif;
+        margin: 0px;
+        background-color: #fefbf6;
+        justify-content: center;
+        display: flex;
+    }
+
+    section {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    video {
+        display: flex;
+        object-fit: cover;
+        object-position: center;
+        width: 100vw;
+        height: 100vh;
+        aspect-ratio: 16/9;
+        margin: 0;
+        filter: brightness(0.4);
+        z-index: -1;
+    }
+
+    .main-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        z-index: 1;
+        color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1 {
+        font-size: 100px;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 3rem;
+        transform: scale(1, 0.94);
+    }
+
+    span {
+        font-family: 'Malvinas Signature', sans-serif;
+        text-align: center;
+        font-size: 50px;
+        margin: 0;
+        transform: scale(1.2, 1);
+    }
+
+    .bottom-text {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        z-index: 2;
+        color: white;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-bottom: 10px;
+    }
+
+    p {
+        font-size: 20px;
+        color: white;
+    }
+
+    img {
+        width: 30px;
+        color: white;
+    }
+
+    a {
+        margin-top: 20px;
+    }
+
+    @media screen and (max-width: 1000px) {
+        h1 {
+            font-size: 10vw;
+            letter-spacing: 4vw;
+        }
+
+        span {
+            font-size: 2rem;
+            margin: 0;
+            margin-top: 10px;
+            transform: scale(1.2, 1);
+        }
+
+        p {
+            font-size: 1rem;
+            color: white;
+        }
+    }
+</style>
+
+<body>
+    <section>
+        <video src="SITE_BG.mp4" autoplay loop muted></video>
+        <div class="main-text">
+            <h1>Stitched</h1>
+            <span>Em Breve</span>
+            <a href="https://www.instagram.com/stitchedoficial/?utm_source=ig_web_button_share_sheet"><img src="right-arrow-svgrepo-com.svg" alt="arrow-right"></a>
+        </div>
+        <div class="bottom-text">
+            <p>Stitched ©</p>
+        </div>
+    </section>
 </body>
+
 </html>
