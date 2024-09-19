@@ -10,6 +10,7 @@
     <meta name="author" content="Felipe Warchelski">
     <title>Stitched</title>
     <link rel="shortcut icon" href="favicon_v2_branco.png" type="image/x-icon" id="favicon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <style>
     @import url('https://fonts.cdnfonts.com/css/malvinas-signature');
@@ -67,7 +68,7 @@
     span {
         font-family: 'Malvinas Signature', sans-serif;
         text-align: center;
-        font-size: 50px;
+        font-size: 2rem;
         margin: 0;
         transform: scale(1.2, 1);
     }
@@ -85,7 +86,7 @@
     }
 
     p {
-        font-size: 20px;
+        font-size: 1rem;
         color: white;
     }
 
@@ -95,7 +96,14 @@
     }
 
     a {
-        margin-top: 20px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .icons i {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        cursor: pointer;
     }
 
     @media screen and (max-width: 1000px) {
@@ -126,7 +134,12 @@
         <div class="main-text">
             <h1>Stitched</h1>
             <span>Em Breve</span>
-            <a href="https://www.instagram.com/stitchedoficial/?utm_source=ig_web_button_share_sheet"><img src="right-arrow-svgrepo-com.svg" alt="arrow-right"></a>
+            <div class="icons">
+                <a href=""><i class='bx bxl-instagram' ></i></a>
+                <a href=""><i class='bx bxl-tiktok' ></i></a>
+            </div>
+            <!-- <a href="https://www.instagram.com/stitchedoficial/?utm_source=ig_web_button_share_sheet"><img src="right-arrow-svgrepo-com.svg" alt="arrow-right"></a> -->
+            
         </div>
         <div class="bottom-text">
             <p>Stitched ©</p>
